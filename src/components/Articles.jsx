@@ -7,7 +7,7 @@ const Articles = () => {
   return (
     <>
      <div className='w-full bg-dark-gray flex justify-center items-start'>
-        <div className="container text-gray-300 bg-dark-gray sm:w-1/2 flex flex-col justify-center items-center ">
+        <div className=" text-gray-300 bg-dark-gray sm:w-1/2 flex flex-col justify-center items-center ">
           {/* Example Boxes */}
           <div className="   p-4 border border-gray-700 rounded-xl mb-4">
             <h2 className="text-2xl font-semibold mb-2">Article 1: Title</h2>

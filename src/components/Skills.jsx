@@ -13,9 +13,9 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
-      className=' bg-dark-gray justify-center  flex items-start'
+      className='dark:bg-gray-100 dark:text-gray-900 bg-dark-gray justify-center  flex items-start'
     >
-      <div id="skills-master" className="skills sm:w-1/2 m-4 bg-dark-gray text-white sm:py-12">
+      <div id="skills-master" className="dark:bg-gray-100 dark:text-gray-900 skills sm:w-1/2 m-4 bg-dark-gray text-white sm:py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}
@@ -50,7 +50,7 @@ const SkillItem = ({ icon, label }) => {
       className="skills11 p-4 border-gray-700 border rounded-lg text-center"
     >
       <i className={icon + " text-4xl mb-4 text-blue-500"}></i>
-      <p className="containerbar">{label}</p>
+      <p className="">{label}</p>
     </motion.div>
   );
 };
@@ -78,7 +78,7 @@ const SkillsGrid = () => {
   ];
 
   return (
-    <div className="skills1 bg-dark-gray  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="dark:bg-gray-100 dark:text-gray-900 bg-dark-gray  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {skillsData.map((skill, index) => (
         <SkillItem key={index} {...skill} />
       ))}

@@ -8,9 +8,9 @@ const Projects = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="w-full bg-dark-gray flex  justify-center items-start"
+      className="dark:bg-gray-100 dark:text-gray-900 w-full bg-dark-gray flex  justify-center items-start"
     >
-      <div id="project-master" className="container mx-auto sm:w-1/2 text-gray-300 bg-dark-gray flex flex-col justify-center m-4">
+      <div id="project-master" className="dark:bg-gray-100 dark:text-gray-900 mx-auto sm:w-1/2 text-gray-300 bg-dark-gray flex flex-col justify-center m-4">
         <ProjectSection
           title="Simple Notes App"
           imageSrc="./simple-notes.png"
@@ -45,7 +45,7 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
   };
 
   return (
-    <div className="container text-gray-300 bg-dark-gray">
+    <div className="dark:bg-gray-100 dark:text-gray-900 text-gray-300 bg-dark-gray">
       <div className="border-gray-700 p-4 pt-8 rounded-xl border mb-4">
         <h3 className="text-2xl font-bold mb-2">{title}</h3>
         <img className="rounded-lg mb-4" src={imageSrc} alt="" />
@@ -57,7 +57,7 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
             rel="noopener noreferrer"
           >
             <motion.button
-              className="bg-blue-700 text-white px-6 py-2 rounded-xl"
+              className=" bg-blue-700 text-white px-6 py-2 rounded-xl"
               whileHover={{ scale: 1.1 }}
             >
               View Project

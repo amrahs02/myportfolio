@@ -25,13 +25,13 @@ const Education = () => {
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, y: 20, transition: { duration: 0.5 } }}
-      className="text-white px-4 py-8 flex flex-col items-center"
+      className="dark:bg-gray-100 dark:text-gray-900 text-white px-4 py-8 flex flex-col items-center"
     >
       <motion.ul
         className="list-none sm:w-1/2"
         variants={educationItemVariants}
         initial="hidden"
-        animate="visible"
+        animate=" "
       >
         {educationData.map(edu => (
           <motion.li key={edu.id} className="mb-8 p-4  border border-gray-700 rounded-md">

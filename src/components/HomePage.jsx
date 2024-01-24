@@ -37,9 +37,9 @@ const Homepage = () => {
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
-      className="bg-dark-gray sm:h-een flex items-start justify-center"
+      className="bg-dark-gray dark:bg-gray-100 dark:text-gray-900  sm:h-een flex items-start justify-center"
     >
-      <div className="container text-center sm:w-1/2 w-4/5  text-white">
+      <div className="text-center sm:w-1/2 w-4/5 dark:bg-gray-100 dark:text-gray-900  text-white">
         <motion.img
           variants={imageVariants}
           src="https://github.com/amrahs02/portfolio_modified/blob/main/SANDEEP_PROFILE_IMAGE-0952b7d6.jpeg?raw=true"
@@ -139,7 +139,7 @@ export default Homepage;
 
 //   return (
 //     <section className="bg-dark-gray  sm:  flex items-start justify-center">
-//       <div className="container bg-dark-gray  text-center sm:w-1/2 w-4/5  text-white">
+//       <div className=" bg-dark-gray  text-center sm:w-1/2 w-4/5  text-white">
 //         <img
 //           src="https://github.com/amrahs02/portfolio_modified/blob/main/SANDEEP_PROFILE_IMAGE-0952b7d6.jpeg?raw=true"
 //           alt="Profile Pic"
