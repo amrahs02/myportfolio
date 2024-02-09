@@ -10,6 +10,7 @@ import HomePage from './components/HomePage';
 import Skills from './components/Skills';
 import GitHubRepos from './github/GitHubRepo';
 import Education from './components/Education';
+import ContentWriter from './components/ContentWriter';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/opensource" element={<OpenSource />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contentwriter" element={<ContentWriter />} />
         <Route path="/skills" element={<Skills/>} />
         <Route path="/githubrepos" element={<GitHubRepos/>} />
         <Route path="/education" element={<Education/>} />

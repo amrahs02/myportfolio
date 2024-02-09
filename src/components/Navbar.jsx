@@ -20,8 +20,8 @@ const Navbar = () => {
   return (
     <nav className=" bg-dark-gray dark:bg-gray-100 p-4 dark:text-gray-800 text-gray-400 w-full">
       <div className=" dark:bg-gray-100 dark:text-gray-900  mx-auto border border-gray-700 rounded-xl sm:flex justify-between fixed top-5 right-1 left-1 sm:w-1/2 p-4  items-center">
-        <div className='flex m-1' >
-          <Link to="/" className="dark:bg-gray-100 dark:text-gray-900 text-white text-2xl font-semibold">
+        <div className='flex m-1 justify-between items-center  ' >
+          <Link to="/" className="mr-2 dark:bg-gray-100 dark:text-gray-900 text-white text-2xl font-semibold">
             Sandeep
           </Link>
           <Switcher />
@@ -63,15 +63,15 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
-              to="/articles"
+              to="/contentwriter"
               className={`text-white ${location.pathname === '/articles' ? 'font-bold underline' : ''
                 }`}
             >
               Articles
             </Link>
-          </li> */}
+          </li>
           <li
             className="relative inline-block"
             onMouseEnter={handleMouseEnter}

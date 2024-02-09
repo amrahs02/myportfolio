@@ -1,47 +1,34 @@
-// Education.jsx
+// src/components/Education.jsx
 import React from 'react';
-import { motion } from 'framer-motion';
+import Breadcrumb from './BreadCrumb';
 
 const Education = () => {
-  const educationData = [
-    { id: 1, title: 'High School', institution: 'Your High School Name', year: '2010 - 2012' },
-    { id: 2, title: 'Intermediate', institution: 'Your Intermediate College Name', year: '2012 - 2014' },
-    { id: 3, title: 'Bachelor\'s Degree', institution: 'Your University Name', year: '2014 - 2018' },
-  ];
-
-  const sectionVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeInOut' } },
-  };
-
-  const educationItemVariants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeInOut' } },
-  };
-
   return (
-    <motion.div
-      variants={sectionVariants}
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0, y: 20, transition: { duration: 0.5 } }}
-      className="dark:bg-gray-100 dark:text-gray-900 text-white px-4 py-8 flex flex-col items-center"
-    >
-      <motion.ul
-        className="list-none sm:w-1/2"
-        variants={educationItemVariants}
-        initial="hidden"
-        animate=" "
-      >
-        {educationData.map(edu => (
-          <motion.li key={edu.id} className="mb-8 p-4  border border-gray-700 rounded-md">
-            <h3 className="text-xl font-semibold mb-1">{edu.title}</h3>
-            <p className="text-lg">{edu.institution}</p>
-            <p className="text-md">{edu.year}</p>
-          </motion.li>
-        ))}
-      </motion.ul>
-    </motion.div>
+    <div className="w-full bg-dark-gray text-white py-12">
+      <div className="container mx-auto max-w-2xl">
+        <h2 className="text-3xl font-semibold mb-6">Education</h2>
+
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold mb-2">High School</h3>
+          <p className="text-gray-400">Imperial Public School, Hathwa, Gopalganj (Bihar)</p>
+          <p className="text-gray-400">Year of Passing: 2017</p>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold mb-2">Intermediate</h3>
+          <p className="text-gray-400">R.A.S.N.S College Kishanpura, Madarpur, Siwan (Bihar)</p>
+          <p className="text-gray-400">Year of Passing: 2019</p>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold mb-2">Bachelor's Degree</h3>
+          <p className="text-gray-400">G.L Bajaj Institute of Technology and Management, Greater Noida (UP)</p>
+          <p className="text-gray-400">Year of Passing: 2024</p>
+        </div>
+
+        {/* Add more education entries as needed */}
+      </div>
+    </div>
   );
 };
 
