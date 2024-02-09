@@ -37,7 +37,7 @@ const Homepage = () => {
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
-      className="bg-dark-gray dark:bg-gray-100 dark:text-gray-900  sm:h-een flex items-start justify-center"
+      className="bg-dark-gray dark:bg-gray-100 dark:text-gray-900 mb-4 flex items-start justify-center"
     >
       <div className="text-center sm:w-1/2 w-4/5 dark:bg-gray-100 dark:text-gray-900  text-white">
         <motion.img

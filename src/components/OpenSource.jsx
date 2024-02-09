@@ -8,7 +8,7 @@ const OpenSource = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="dark:bg-gray-100 dark:text-gray-900 mx-auto my-8 text-white sm:w-1/2 p-8 border border-gray-700 rounded-md shadow-md"
+      className="dark:bg-gray-100 dark:text-gray-900 m-4  my-8  text-white sm:w-1/2 p-8 border border-gray-700 rounded-md shadow-md"
     >
       <h2 className="text-3xl font-bold mb-4">My Open Source Journey</h2>
 

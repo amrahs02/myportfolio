@@ -6,7 +6,7 @@ const ContentWriter = () => {
     return (
         <>
             <div className=" bg-dark-gray flex justify-center items-center text-white py-12">
-                <div className=" w-1/2  container">
+                <div className=" sm:w-1/2 m-4  container">
                     <p className="text-gray-400 mb-4">
                         As a part-time content writer, I enjoy creating articles on various topics. Below are some of my featured articles published on <span className='text-green-500' >GeeksforGeeks</span> :
                     </p>

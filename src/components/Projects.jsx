@@ -10,7 +10,7 @@ const Projects = () => {
       exit={{ opacity: 0, y: -20 }}
       className="dark:bg-gray-100 dark:text-gray-900 w-full bg-dark-gray flex  justify-center items-start"
     >
-      <div id="project-master" className="dark:bg-gray-100 dark:text-gray-900 mx-auto sm:w-1/2 text-gray-300 bg-dark-gray flex flex-col justify-center m-4">
+      <div id="project-master" className="dark:bg-gray-100 dark:text-gray-900 m-4 sm:w-1/2 text-gray-300 bg-dark-gray flex flex-col justify-center">
         <ProjectSection
           title="Simple Notes App"
           imageSrc="./simple-notes.png"
@@ -46,7 +46,7 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
 
   return (
     <div className="dark:bg-gray-100 dark:text-gray-900 text-gray-300 bg-dark-gray">
-      <div className="border-gray-700 p-4 pt-8 rounded-xl border mb-4">
+      <div className="border-gray-700 p-4 pt-8 rounded-lg border mb-4">
         <h3 className="text-2xl font-bold mb-2">{title}</h3>
         <img className="rounded-lg mb-4" src={imageSrc} alt="" />
         <p className="text-gray-500 mb-4">{description}</p>
