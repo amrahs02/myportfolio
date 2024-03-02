@@ -66,7 +66,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contentwriter"
-              className={`text-white ${location.pathname === '/articles' ? 'font-bold underline' : ''
+              className={`text-white dark:text-gray-900 ${location.pathname === '/articles' ? 'font-bold underline' : ''
                 }`}
             >
               Articles
