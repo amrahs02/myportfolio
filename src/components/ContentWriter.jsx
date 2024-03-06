@@ -1,15 +1,16 @@
-// src/components/ContentWriter.jsx
 import React from 'react';
 import Breadcrumb from './BreadCrumb';
 
 const ContentWriter = () => {
     return (
         <>
-            <div className=" bg-dark-gray dark:bg-gray-100 flex justify-center items-center text-white py-12">
-                <div className=" sm:w-1/2 m-4  container">
+            <div className="bg-dark-gray dark:bg-gray-100 flex justify-center items-center text-white py-12">
+                <div className="sm:w-1/2 m-4 container">
                     <p className="text-gray-800 mb-4">
-                        As a part-time content writer, I enjoy creating articles on various topics. Below are some of my featured articles published on <span className='text-green-500' >GeeksforGeeks</span> :
+                        Welcome to my corner of knowledge-sharing! As a part-time content writer, I've had the pleasure of delving into various topics and contributing articles to platforms like{' '}
+                        <span className="text-green-500">GeeksforGeeks</span>. Below, you'll find a curated selection of my featured articles, covering a range of web development and technology subjects. Explore, learn, and enjoy the insights!
                     </p>
+
                     <ArticleCard
                         title="Benefits of Using Hooks in React Redux"
                         link="https://www.geeksforgeeks.org/what-are-the-benefits-of-using-hooks-in-react-redux/"
@@ -23,6 +24,23 @@ const ContentWriter = () => {
                     />
 
                     {/* Add more ArticleCards for additional articles */}
+                    <ArticleCard
+                        title="What is Redux Toolkit?"
+                        link="https://www.geeksforgeeks.org/what-is-redux-toolkit/"
+                        description="Learn about Redux Toolkit and its advantages."
+                    />
+
+                    <ArticleCard
+                        title="How to use ::before and ::after elements in Tailwind CSS?"
+                        link="https://www.geeksforgeeks.org/how-to-use-before-and-after-elements-in-tailwind-css/"
+                        description="Discover the use of ::before and ::after elements in Tailwind CSS."
+                    />
+
+                    <ArticleCard
+                        title="How to install Bootstrap 5?"
+                        link="https://www.geeksforgeeks.org/how-to-install-bootstrap-5/                                                                                                                                                                                                                     "
+                        description="Step-by-step guide on installing Bootstrap 5."
+                    />
                 </div>
             </div>
         </>

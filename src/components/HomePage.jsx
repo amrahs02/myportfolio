@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 const Homepage = () => {
   const techStack = [
     { name: 'React', icon: 'fab fa-react' },
-    { name: 'Redux Toolkit', icon: 'fas fa-toolbox' },
+    { name: 'Redux Toolkit', icon: 'fas fa-redux-toolkit' },
     { name: 'Tailwind', icon: 'fas fa-tailwind ' },
     { name: 'Shadcn', icon: 'fas fa-tailwind' },
-    { name: 'Firebas', icon: 'fas fa-fire' },
-    { name: 'Framer Motion', icon: 'fas fa-video' },
+    { name: 'Firebase', icon: 'fas fa-firebase' },
+    { name: 'Framer Motion', icon: 'fas fa-framer-motion' },
   ];
 
   const sectionVariants = {
@@ -62,6 +62,10 @@ const Homepage = () => {
             </p>
             <p>
               In the ever-evolving tech landscape, I am committed to staying abreast of the latest trends and technologies. This dedication to continuous learning ensures that I bring the most innovative solutions to the projects I undertake.
+            </p>
+            <br />
+            <p>
+              I am also a freelance content writer at GeeksforGeeks.
             </p>
           </div>
         </motion.p>
