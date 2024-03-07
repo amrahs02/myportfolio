@@ -30,7 +30,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/"
-              className={`text-white dark:text-gray-900 ${location.pathname === '/' ? 'font-bold underline' : ''
+              className={`text-white dark:text-gray-900 ${location.pathname === '/' ? 'font-bold underline': ''
                 }`}
             >
               Home
