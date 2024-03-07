@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profile_images from '/home/sandeep/Desktop/github-projects/myportfolio/src/assets/sandeepsharmacartoon-d29278df.jpg'
+import profile_images from '../assets/sandeepsharmacartoon-d29278df.jpg'
 
 const Homepage = () => {
   const techStack = [
