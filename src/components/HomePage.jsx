@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import profile_images from '/home/sandeep/Desktop/github-projects/myportfolio/src/assets/sandeepsharmacartoon-d29278df.jpg'
 
 const Homepage = () => {
   const techStack = [
@@ -42,9 +43,9 @@ const Homepage = () => {
       <div className="text-center sm:w-1/2 w-4/5 dark:bg-gray-100 dark:text-gray-900  text-white">
         <motion.img
           variants={imageVariants}
-          src="https://github.com/amrahs02/portfolio_modified/blob/main/SANDEEP_PROFILE_IMAGE-0952b7d6.jpeg?raw=true"
+          src={profile_images}
           alt="Profile Pic"
-          className="w-32 h-32 mt-10 rounded-full   mx-auto mb-4 border-4 border-white"
+          className="w-52 h-52 rounded-full   mx-auto mb-4 border-4 border-white"
         />
         <motion.h1
           variants={techStackVariants}
