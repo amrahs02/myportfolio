@@ -12,7 +12,6 @@ const Navbar = () => {
   const handleMouseEnter = () => {
     setShowMore(true);
   };
-
   const handleMouseLeave = () => {
     setShowMore(false);
   };
