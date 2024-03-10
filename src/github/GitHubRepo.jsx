@@ -27,7 +27,7 @@ const GitHubRepos = () => {
 
   return (
     <motion.div
-      className="bg-dark-gray flex justify-center items-center flex-col text-white py-8 px-4"
+      className="bg-dark-gray flex dark:bg-gray-100 justify-center items-center flex-col text-white py-8 px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
     >
@@ -35,7 +35,7 @@ const GitHubRepos = () => {
         {repos.map(repo => (
           <motion.li
             key={repo.id}
-            className="m-2 border border-gray-700 overflow-hidden p-8 hover:scale-105 duration-300 rounded-xl"
+            className="m-2  border border-gray-700 overflow-hidden p-8 hover:scale-105 duration-300 rounded-xl"
             variants={repoVariants}
             whileHover={{ scale: 1.05 }}
           > 
@@ -43,7 +43,7 @@ const GitHubRepos = () => {
               href={repo.html_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-100 capitalize hover:underline"
+              className="text-blue-100 dark:text-gray-700 capitalize hover:underline"
             >
               {repo.name}
             </a>

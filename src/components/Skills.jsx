@@ -80,7 +80,7 @@ const SkillsGrid = () => {
   return (
     <div className="dark:bg-gray-100 dark:text-gray-900 bg-dark-gray  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {skillsData.map((skill, index) => (
-        <SkillItem key={index} {...skill} />
+        <SkillItem  key={index} {...skill} />
       ))}
     </div>
   );

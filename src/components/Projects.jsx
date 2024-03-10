@@ -10,23 +10,30 @@ const Projects = () => {
       exit={{ opacity: 0, y: -20 }}
       className="dark:bg-gray-100 dark:text-gray-900 w-full bg-dark-gray flex  justify-center items-start"
     >
+      
       <div id="project-master" className="dark:bg-gray-100 dark:text-gray-900 m-4 sm:w-1/2 text-gray-300 bg-dark-gray flex flex-col justify-center">
+      <ProjectSection
+          title="Anushka General Store"
+          imageSrc="./simple-notes.png"
+          description="An Ecommerce web app built built with React , Tailwind Css, and Material-UI, ."
+          projectLink="https://anushkageneralstore.vercel.app/"
+        />
         <ProjectSection
           title="Simple Notes App"
           imageSrc="./simple-notes.png"
           description="A Simple Notes App built with React and Material-UI."
-          projectLink="https://google-keep-clone-gules.vercel.app/"
+          projectLink="https://notesimple.vercel.app/"
         />
         <ProjectSection
           title="Personal Portfolio Website"
           imageSrc="./portfolio2.png"
-          description="A personal portfolio website showcasing work, skills, and achievements."
-          projectLink="https://amrahs02.github.io/portfolio/"
+          description="A personal portfolio website showcasing work, skills, and achievements , build using Html , Tailwind CSS and Javascript."
+          projectLink="https://amrahs02.github.io/portfolio_modified/"
         />
         <ProjectSection
           title="To-Do List in React"
           imageSrc="./todo.png"
-          description="A todo list app for daily activities."
+          description="A todo list app for daily activities ."
           projectLink="https://amrahs02.github.io/todo_react/"
         />
       </div>
@@ -57,14 +64,14 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
             rel="noopener noreferrer"
           >
             <motion.button
-              className=" bg-blue-700 text-white px-6 py-2 rounded-xl"
+              className=" dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-xl"
               whileHover={{ scale: 1.1 }}
             >
               View Project
             </motion.button>
           </a>
           <motion.button
-            className="bg-blue-700 text-white px-6 py-2 rounded-xl"
+            className="dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-xl"
             onClick={copyLink}
             whileHover={{ scale: 1.1 }}
           >

@@ -10,9 +10,9 @@ const OpenSource = () => {
       exit={{ opacity: 0, y: -20 }}
       className="dark:bg-gray-100 dark:text-gray-900 m-4 flex items-center justify-center  "
     >
-      <div className='w-1/2 border border-gray-700  p-8 my-8  text-white  rounded-md shadow-md ' >
+      <div className='sm:w-1/2  border border-gray-700  p-8 my-8  text-white  rounded-xl shadow-md ' >
 
-        <h2 className="text-3xl font-bold mb-4">My Open Source Journey</h2>
+        <h2 className="text-3xl font-bold dark:text-gray-600 mb-4">My Open Source Journey</h2>
 
         <p className="text-gray-300 dark:text-gray-900 mb-6">
           Hey there! 👋 I'm Sandeep, a passionate developer who recently embarked on the exciting journey
