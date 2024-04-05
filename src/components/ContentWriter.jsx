@@ -41,6 +41,24 @@ const ContentWriter = () => {
                         link="https://www.geeksforgeeks.org/how-to-install-bootstrap-5/                                                                                                                                                                                                                     "
                         description="Step-by-step guide on installing Bootstrap 5."
                     />
+                    {/* Add remaining articles here */}
+                    <ArticleCard
+                        title="JavaScript Program to find Intersection of Unsorted Arrays"
+                        link="https://www.geeksforgeeks.org/javascript-program-to-find-intersection-of-unsorted-arrays/"
+                        description="Learn how to find the intersection of unsorted arrays using JavaScript."
+                    />
+
+                    <ArticleCard
+                        title="How to Convert an Array to a Vector in C++?"
+                        link="https://www.geeksforgeeks.org/how-to-convert-an-array-to-a-vector-in-cpp/"
+                        description="Learn the process of converting an array to a vector in C++."
+                    />
+
+                    <ArticleCard
+                        title="How to Create and View Access Tokens in NPM?"
+                        link="https://www.geeksforgeeks.org/how-to-create-and-view-access-tokens-in-npm/"
+                        description="Explore the steps to create and view access tokens in NPM."
+                    />
                 </div>
             </div>
         </>
