@@ -6,10 +6,10 @@ const Homepage = () => {
   const techStack = [
     { name: 'React', icon: 'fab fa-react' },
     { name: 'Redux Toolkit', icon: 'fas fa-redux-toolkit' },
+    { name: 'MongoDB', icon: 'fas fa-mongoDB' },
+    { name: 'ExpressJS', icon: 'fas fa-framer-motion' },
+    { name: 'NodeJS', icon: 'fas fa' },
     { name: 'Tailwind', icon: 'fas fa-tailwind ' },
-    { name: 'Shadcn', icon: 'fas fa-tailwind' },
-    { name: 'Firebase', icon: 'fas fa-firebase' },
-    { name: 'Framer Motion', icon: 'fas fa-framer-motion' },
   ];
 
   const sectionVariants = {
@@ -116,6 +116,9 @@ const Homepage = () => {
             <motion.li whileHover={{ scale: 1.1 }}>
               <a href="https://www.medium.com/@amrahs02" target="_blank" rel="noopener noreferrer"> <i className="fab fa-medium"></i> </a>
             </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }}>
+              <a href="https://auth.geeksforgeeks.org/user/isandeep2183/articles#" target="_blank" rel="noopener noreferrer"> <i className="f"></i>G</a>
+            </motion.li>
           </ul>
         </motion.div>
       </div>
@@ -136,7 +139,7 @@ export default Homepage;
 //     { name: 'Redux Toolkit', color: 'bg-blue-600', icon: 'fas fa-toolbox' },
 //     { name: 'Tailwind', color: 'bg-green-500', icon: 'fas fa-tailwind ' },
 //     { name: 'Shadcn', color: 'bg-purple-500', icon: 'fas fa-tailwind' },
-//     { name: 'Firebase', color: 'bg-red-500', icon: 'fas fa-fire' },
+//     { name: 'MongoDB', color: 'bg-red-500', icon: 'fas fa-fire' },
 //     { name: 'Framer Motion', color: 'bg-yellow-500', icon: 'fas fa-video' },
 //   ];
 
