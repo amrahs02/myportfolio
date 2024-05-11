@@ -1,36 +1,54 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Breadcrumb from './BreadCrumb';
 import { motion } from 'framer-motion';
-import Switcher from "../dark-mode/Switcher"
+import Switcher from "../dark-mode/Switcher";
 
 const Navbar = () => {
   const location = useLocation();
   const [showMore, setShowMore] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setShowMore(true);
   };
+
   const handleMouseLeave = () => {
     setShowMore(false);
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
-    <nav className=" bg-dark-gray dark:bg-gray-100 p-4 dark:text-gray-800 text-gray-400 w-full">
-      <div className=" dark:bg-gray-100 bg-dark-gray dark:text-gray-900  mx-auto border border-gray-700 rounded-xl sm:flex justify-between fixed top-5 right-1 left-1 sm:w-1/2 p-4  items-center">
-        <div className='flex m-1 justify-between items-center  ' >
+    <nav className="bg-dark-gray dark:bg-gray-100 p-4 dark:text-gray-800 text-gray-400 w-full">
+      <div className="dark:bg-gray-100 bg-dark-gray dark:text-gray-900 mx-auto border border-gray-700 rounded-xl sm:flex justify-between fixed top-5 right-1 left-1 sm:w-1/2 p-4 items-center">
+        <div className='flex m-1 justify-between items-center'>
           <Link to="/" className="mr-2 dark:bg-gray-100 dark:text-gray-900 text-white text-2xl font-semibold">
             Sandeep
           </Link>
-          <Switcher />
+          <div className='flex' >
+            <Switcher />
+            <button
+              className="sm:hidden  text-white dark:text-gray-900 focus:outline-none"
+              onClick={toggleMobileMenu}
+            >
+              <svg
+                className=" m-2 h-6 w-6 fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fillRule="evenodd" d="M4 6h16a1 1 0 110 2H4a1 1 0 110-2zM4 11h16a1 1 0 110 2H4a1 1 0 110-2zM4 16h16a1 1 0 110 2H4a1 1 0 110-2z" clipRule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <ul className="flex space-x-4">
+        <ul className={`sm:flex sm:space-x-3 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
           <li>
             <Link
               to="/"
-              className={`text-white dark:text-gray-900 ${location.pathname === '/' ? 'font-bold underline': ''
-                }`}
+              className={`text-white dark:text-gray-900 ${location.pathname === '/' ? 'font-bold underline' : ''}`}
             >
               Home
             </Link>
@@ -38,8 +56,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/skills"
-              className={`text-white dark:text-gray-900 ${location.pathname === '/skills' ? 'font-bold underline' : ''
-                }`}
+              className={`text-white dark:text-gray-900 ${location.pathname === '/skills' ? 'font-bold underline' : ''}`}
             >
               Skills
             </Link>
@@ -47,8 +64,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/opensource"
-              className={`text-white dark:text-gray-900 ${location.pathname === '/opensource' ? 'font-bold underline' : ''
-                }`}
+              className={`text-white dark:text-gray-900 ${location.pathname === '/opensource' ? 'font-bold underline' : ''}`}
             >
               OpenSource
             </Link>
@@ -56,8 +72,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/projects"
-              className={`text-white dark:text-gray-900 ${location.pathname === '/projects' ? 'font-bold underline' : ''
-                }`}
+              className={`text-white dark:text-gray-900 ${location.pathname === '/projects' ? 'font-bold underline' : ''}`}
             >
               Projects
             </Link>
@@ -65,8 +80,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contentwriter"
-              className={`text-white dark:text-gray-900 ${location.pathname === '/articles' ? 'font-bold underline' : ''
-                }`}
+              className={`text-white dark:text-gray-900 ${location.pathname === '/contentwriter' ? 'font-bold underline' : ''}`}
             >
               Articles
             </Link>
@@ -80,7 +94,7 @@ const Navbar = () => {
               More
             </button>
             {showMore && (
-              <motion.div className="dark:bg-gray-100 dark:text-gray-900 absolute top-full left-0 border-gray-700 border rounded-b-lg text-white py-2 space-y-2"
+              <motion.div className="dark:bg-gray-100 bg-gray-700 dark:text-gray-900 absolute top-full left-0 border-gray-700 border rounded-b-lg text-white py-2 space-y-2"
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 whileHover={{ scale: 1.08 }}
               >
@@ -107,6 +121,7 @@ const Navbar = () => {
             )}
           </li>
         </ul>
+        
       </div>
       <div>
         <Breadcrumb />
