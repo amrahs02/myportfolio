@@ -106,7 +106,7 @@ const Homepage = () => {
         >
           <ul className="social-media flex m-2 justify-center items-center text-2xl space-x-4">
             <motion.li whileHover={{ scale: 1.1 }}>
-              <a href="https://www.linkedin.com/in/sandeep-kumar-sharma-9295151a6/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i> </a>
+              <a href="https://www.linkedin.com/in/sandeepsharma2183" target="_blank" rel="noopener noreferrer"> <i className="fab fa-linkedin"></i> </a>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }}>
               <a href="https://www.github.com/amrahs02" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i> </a>
