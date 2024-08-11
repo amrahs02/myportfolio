@@ -94,7 +94,7 @@ const Navbar = () => {
               More
             </button>
             {showMore && (
-              <motion.div className="dark:bg-gray-100 bg-gray-700 dark:text-gray-900 absolute top-full left-0 border-gray-700 border rounded-b-lg text-white py-2 space-y-2"
+              <motion.div className="dark:bg-gray-100  bg-opacity-10 bg-gray-800 dark:text-gray-700 absolute top-full left-0 rounded-b-lg text-white py-2 space-y-2"
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 whileHover={{ scale: 1.08 }}
               >

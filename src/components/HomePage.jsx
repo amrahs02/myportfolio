@@ -45,13 +45,14 @@ const Homepage = () => {
           variants={imageVariants}
           src={profile_images}
           alt="Profile Pic"
-          className="w-52 h-52 dark:border-black rounded-full   mx-auto mb-4 border-4 border-white"
+          className="w-52 h-52 dark:border-black rounded-full mx-auto mb-4 border-4 border-white"
         />
         <motion.h1
           variants={techStackVariants}
           className="text-4xl font-extrabold mb-2"
         >
-          Hello, This is Sandeep Sharma.
+          Hello, This is 
+          <span className='text-blue-500'> Sandeep Sharma.</span>
         </motion.h1>
         <motion.p
           variants={techStackVariants}

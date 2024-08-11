@@ -12,7 +12,9 @@ const OpenSource = () => {
     >
       <div className='w-4/5 bg-opacity-5 bg-gray-100 dark:bg-gray-200    p-8 my-8  text-white  rounded-xl shadow-md ' >
 
-        <h2 className="text-3xl font-bold dark:text-gray-600 mb-4">My Open Source Journey</h2>
+        <h2 className="text-3xl font-bold dark:text-gray-600 mb-4">My 
+          <span className='text-yellow-500'> Open Source </span>
+           Journey</h2>
 
         <p className="text-gray-300  dark:text-gray-900 mb-6">
           Hey there! 👋 I'm Sandeep, a passionate developer who recently embarked on the exciting journey
