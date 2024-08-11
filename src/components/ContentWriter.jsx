@@ -4,8 +4,8 @@ import Breadcrumb from './BreadCrumb';
 const ContentWriter = () => {
     return (
         <>
-            <div className="bg-dark-gray dark:bg-gray-100 flex justify-center items-center text-white py-8">
-                <div className="sm:w-1/2 mx-4 container">
+            <div className="bg-dark-gray  dark:bg-gray-100 flex justify-center items-center text-white py-8">
+                <div className=" w-4/5 mx-4  container">
                     <p className=" dark:text-gray-800  text-gray-100 mx-2 sm:mb-4">
                         Welcome to my corner of knowledge-sharing! As a part-time content writer, I've had the pleasure of delving into various topics and contributing articles to platforms like{' '}
                         <span className="text-green-500">GeeksforGeeks</span>. Below, you'll find a curated selection of my featured articles, covering a range of web development and technology subjects. Explore, learn, and enjoy the insights!
@@ -67,10 +67,10 @@ const ContentWriter = () => {
 
 const ArticleCard = ({ title, link, description }) => {
     return (
-        <div className="bg-dark-gray my-4 dark:text-gray-700 dark:bg-gray-100 text-gray-400 p-6 rounded-lg border border-gray-600 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <div className="bg-dark-gray my-4 dark:text-gray-700 dark:bg-gray-100 text-gray-400 p-6 rounded-lg  bg-opacity-5 bg-gray-100 hover:border-blue-500 transition duration-300 transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             <p className="text-gray-500 mb-4">{description}</p>
-            <a href={link} target="_blank" rel="noopener noreferrer" className=" dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-xl hover:underline">
+            <a href={link} target="_blank" rel="noopener noreferrer" className=" dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-xl hover:underline">
                 Read Article
             </a>
         </div>

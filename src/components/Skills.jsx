@@ -15,7 +15,7 @@ const Skills = () => {
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
       className='dark:bg-gray-100 dark:text-gray-900 bg-dark-gray justify-center  flex items-start'
     >
-      <div id="skills-master" className="dark:bg-gray-100 dark:text-gray-900 skills sm:w-1/2 m-4 bg-dark-gray text-white sm:py-12">
+      <div id="skills-master" className="dark:bg-gray-100  dark:text-gray-900 skills w-4/5 m-4 bg-dark-gray text-white sm:py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}
@@ -39,7 +39,7 @@ const Skills = () => {
 const SkillItem = ({ icon, label }) => {
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.5 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },    
   };
 
   return (
@@ -47,9 +47,9 @@ const SkillItem = ({ icon, label }) => {
       transition={{ type: "spring", stiffness: 400, damping: 6 }}
       variants={itemVariants}
       whileHover={{ scale: 1.1 }}
-      className="skills11 p-4 border-gray-700 border rounded-lg text-center"
+      className="skills11 p-4 bg-opacity-5 dark:bg-gray-200 bg-gray-100 rounded-lg text-center"
     >
-      <i className={icon + " text-4xl mb-4 text-blue-500"}></i>
+      <i className={icon + "  text-4xl mb-4 text-green-500"}></i>
       <p className="">{label}</p>
     </motion.div>
   );
@@ -75,6 +75,17 @@ const SkillsGrid = () => {
     { icon: "fab fa-matlab", label: "Operating System" },
     { icon: "fab fa-node", label: "Node.js" },
     { icon: "fab fa-react", label: "Next.js" },
+    { icon: "fab fa-react", label: "Redux" },
+    { icon: "fab fa-react", label: "Redux Toolkit" },
+    {icon: "fab fa-node-js", label: "Express.js"},
+    {icon: "fab fa-mongo", label: "MongoDB"},
+    {icon: "fab fa-node-js", label: "Node.js"},
+    //golang added 
+    {icon: "fab fa-golang", label: "Golang"},
+    //api
+    {icon: "fab fa-restfulapi", label: "Restful API"},
+
+   
   ];
 
   return (

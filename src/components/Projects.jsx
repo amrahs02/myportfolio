@@ -8,10 +8,10 @@ const Projects = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="dark:bg-gray-100 dark:text-gray-900 w-full bg-dark-gray flex  justify-center items-start"
+      className="dark:bg-gray-100 dark:text-gray-900 w-full  bg-dark-gray flex  justify-center items-start"
     >
       
-      <div id="project-master" className="dark:bg-gray-100 dark:text-gray-900 m-4 sm:w-1/2 text-gray-300 bg-dark-gray flex flex-col justify-center">
+      <div id="project-master" className=" dark:bg-gray-100 dark:text-gray-900 m-4 w-4/5 text-gray-300 bg-dark-gray flex flex-col justify-center">
       <ProjectSection
           title="Anushka General Store"
           imageSrc="./simple-notes.png"
@@ -53,25 +53,25 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
 
   return (
     <div className="dark:bg-gray-100 dark:text-gray-900 text-gray-300 bg-dark-gray">
-      <div className="border-gray-700 p-4 pt-8 rounded-lg border mb-4">
+      <div className=" p-4 pt-8 rounded-lg  mb-4 bg-opacity-10 bg-gray-400">
         <h3 className="text-2xl font-bold mb-2">{title}</h3>
         <img className="rounded-lg mb-4" src={imageSrc} alt="" />
         <p className="text-gray-500 mb-4">{description}</p>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ">
           <a
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             <motion.button
-              className=" dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-xl"
+              className=" dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-xl"
               whileHover={{ scale: 1.1 }}
             >
               View Project
             </motion.button>
           </a>
           <motion.button
-            className="dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-xl"
+            className="dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-xl"
             onClick={copyLink}
             whileHover={{ scale: 1.1 }}
           >

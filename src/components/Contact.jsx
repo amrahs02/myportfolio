@@ -3,8 +3,8 @@ import Breadcrumb from './BreadCrumb';
 
 const ContactMe = () => {
   return (
-    <div className=" bg-dark-gray dark:bg-gray-100 text-white py-12 m-4">
-      <div className="container rounded-lg bg-dark-gray border dark:bg-gray-100 border-gray-700 p-4 mx-auto sm:w-1/2">
+    <div className=" bg-dark-gray bg-opacity-5 dark:bg-gray-100 text-white py-12 m-4">
+      <div className="container rounded-lg bg-dark-gray border dark:bg-gray-100 border-gray-700 p-4 w-4/5 mx-auto">
         <h2 className="text-3xl font-semibold dark:text-gray-500 mb-6">Contact Me</h2>
 
         {/* Updated Contact Form */}

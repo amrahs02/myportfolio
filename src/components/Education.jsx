@@ -5,7 +5,7 @@ import Breadcrumb from './BreadCrumb';
 const Education = () => {
   return (
     <div className=" bg-dark-gray text-white flex justify-center dark:bg-gray-100 items-center py-12">
-      <div className="container m-4 sm:w-1/2 bg-dark-gray border dark:bg-gray-100 border-gray-700 p-4 rounded-lg">
+      <div className="container m-4 w-4/5 bg-dark-gray border dark:bg-gray-100 border-gray-700 p-4 rounded-lg">
         <h2 className="text-3xl font-semibold text-gray-500 mb-6">Education</h2>
 
         <div className="mb-6">

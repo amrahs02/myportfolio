@@ -8,13 +8,13 @@ const OpenSource = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="dark:bg-gray-100 dark:text-gray-900 m-4 flex items-center justify-center  "
+      className="dark:bg-gray-00  dark:text-gray-900 m-4 flex items-center justify-center  "
     >
-      <div className='sm:w-1/2  border border-gray-700  p-8 my-8  text-white  rounded-xl shadow-md ' >
+      <div className='w-4/5 bg-opacity-5 bg-gray-100 dark:bg-gray-200    p-8 my-8  text-white  rounded-xl shadow-md ' >
 
         <h2 className="text-3xl font-bold dark:text-gray-600 mb-4">My Open Source Journey</h2>
 
-        <p className="text-gray-300 dark:text-gray-900 mb-6">
+        <p className="text-gray-300  dark:text-gray-900 mb-6">
           Hey there! 👋 I'm Sandeep, a passionate developer who recently embarked on the exciting journey
           into the world of open source contributions. In 2023, I participated in Hacktoberfest, an event
           that ignited my interest in contributing to open source projects.
