@@ -8,9 +8,9 @@ const OpenSource = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="dark:bg-gray-00  dark:text-gray-900 m-4 flex items-center justify-center  "
+      className="dark:bg-gray-00  dark:text-gray-900  flex items-center justify-center  "
     >
-      <div className='w-4/5 bg-opacity-5 bg-gray-100 dark:bg-gray-200    p-8 my-8  text-white  rounded-xl shadow-md ' >
+      <div className='sm:w-4/5 w-full m-2 bg-opacity-5 bg-gray-100 dark:bg-gray-200  p-8 my-8  text-white  rounded-xl shadow-md ' >
 
         <h2 className="text-3xl font-bold dark:text-gray-600 mb-4">My 
           <span className='text-yellow-500'> Open Source </span>

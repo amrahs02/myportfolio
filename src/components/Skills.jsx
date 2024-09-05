@@ -15,7 +15,7 @@ const Skills = () => {
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
       className='dark:bg-gray-100 dark:text-gray-900 bg-dark-gray justify-center  flex items-start'
     >
-      <div id="skills-master" className="dark:bg-gray-100  dark:text-gray-900 skills w-4/5 m-4 bg-dark-gray text-white sm:py-12">
+      <div id="skills-master" className="dark:bg-gray-100  dark:text-gray-900 skills sm:w-4/5 w-full m-2 bg-dark-gray text-white sm:py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}

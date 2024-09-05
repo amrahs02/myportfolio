@@ -40,7 +40,7 @@ const Homepage = () => {
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
       className="bg-dark-gray bg-opacity-100 dark:bg-gray-100 dark:text-gray-900 mb-4 flex items-start justify-center"
     >
-      <div className="text-center  w-4/5 dark:bg-gray-100 dark:text-gray-900  text-white">
+      <div className="text-center sm:w-4/5 w-full m-2 dark:bg-gray-100 dark:text-gray-900  text-white">
         <motion.img
           variants={imageVariants}
           src={profile_images}

@@ -11,7 +11,7 @@ const Projects = () => {
       className="dark:bg-gray-100 dark:text-gray-900 w-full  bg-dark-gray flex  justify-center items-start"
     >
       
-      <div id="project-master" className=" dark:bg-gray-100 dark:text-gray-900 m-4 w-4/5 text-gray-300 bg-dark-gray flex flex-col justify-center">
+      <div id="project-master" className=" dark:bg-gray-100 dark:text-gray-900 sm:w-4/5 w-full m-2 text-gray-300 bg-dark-gray flex flex-col justify-center">
       <ProjectSection
           title="Anushka General Store"
           imageSrc="./simple-notes.png"
