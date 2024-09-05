@@ -47,7 +47,7 @@ const SkillItem = ({ icon, label }) => {
       transition={{ type: "spring", stiffness: 400, damping: 6 }}
       variants={itemVariants}
       whileHover={{ scale: 1.1 }}
-      className="skills11 p-4 bg-opacity-5 dark:bg-gray-200 bg-gray-100 rounded-lg text-center"
+      className="skills11 p-4 bg-opacity-5 dark:bg-gray-200 bg-gray-100 rounded-2xl text-center"
     >
       <i className={icon + "  text-4xl mb-4 text-green-500"}></i>
       <p className="">{label}</p>

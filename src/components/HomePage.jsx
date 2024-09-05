@@ -56,9 +56,9 @@ const Homepage = () => {
         </motion.h1>
         <motion.p
           variants={techStackVariants}
-          className="text-lg mb-4 leading-relaxed  border-gray-700 rounded-xl"
+          className="text-lg mb-4 leading-relaxed  border-gray-700 rounded-2xl"
         >
-          <div className='p-4 bg-opacity-10 bg-gray-500 rounded-lg' >
+          <div className='p-4 bg-opacity-10 bg-gray-500 rounded-2xl' >
             <p>
               I am a passionate and versatile web developer with a keen eye for creating stunning and functional user interfaces. 
                 <br/> My journey in the world of programming has equipped me with a robust skill set that spans across various technologies.!
@@ -87,7 +87,7 @@ const Homepage = () => {
               <motion.div
                 key={index}
                 variants={techItemVariants}
-                className={`col-span-2 mt-2 bg-opacity-10 bg-gray-500 rounded-lg py-2 px-10 md:col-span-1 `}
+                className={`col-span-2 mt-2 bg-opacity-10 bg-gray-500 rounded-2xl py-2 px-10 md:col-span-1 `}
               >
                 <div className='flex items-center' >
                   <motion.h3 className="text-lg mr-4 text-start ">{tech.name}</motion.h3>
@@ -102,7 +102,7 @@ const Homepage = () => {
         {/* Social Media Links */}
         <motion.div
           variants={techStackVariants}
-          className="mt-8  p-1  rounded-xl bg-opacity-10 bg-gray-500"
+          className="mt-8  p-1  rounded-2xl bg-opacity-10 bg-gray-500"
         >
           <ul className="social-media flex m-2 justify-center items-center text-2xl space-x-4">
             <motion.li whileHover={{ scale: 1.1 }}>

@@ -35,7 +35,7 @@ const GitHubRepos = () => {
         {repos.map(repo => (
           <motion.li
             key={repo.id}
-            className="m-2  border border-gray-700 overflow-hidden p-8 hover:scale-105 duration-300 rounded-xl"
+            className="m-2  border border-gray-700 overflow-hidden p-8 hover:scale-105 duration-300 rounded-2xl"
             variants={repoVariants}
             whileHover={{ scale: 1.05 }}
           > 

@@ -53,9 +53,9 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
 
   return (
     <div className="dark:bg-gray-100 dark:text-gray-900 text-gray-300 bg-dark-gray">
-      <div className=" p-4 pt-8 rounded-lg  mb-4 bg-opacity-10 bg-gray-400">
+      <div className=" p-4 pt-8 rounded-2xl  mb-4 bg-opacity-10 bg-gray-400">
         <h3 className="text-2xl font-bold mb-2">{title}</h3>
-        <img className="rounded-lg mb-4" src={imageSrc} alt="" />
+        <img className="rounded-2xl mb-4" src={imageSrc} alt="" />
         <p className="text-gray-500 mb-4">{description}</p>
         <div className="flex items-center space-x-4 ">
           <a
@@ -64,14 +64,14 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
             rel="noopener noreferrer"
           >
             <motion.button
-              className=" dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-xl"
+              className=" dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-2xl"
               whileHover={{ scale: 1.1 }}
             >
               View Project
             </motion.button>
           </a>
           <motion.button
-            className="dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-xl"
+            className="dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-2xl"
             onClick={copyLink}
             whileHover={{ scale: 1.1 }}
           >

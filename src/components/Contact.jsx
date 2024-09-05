@@ -4,7 +4,7 @@ import Breadcrumb from './BreadCrumb';
 const ContactMe = () => {
   return (
     <div className=" bg-dark-gray bg-opacity-5 dark:bg-gray-100 text-white py-12 m-4">
-      <div className="container rounded-lg bg-dark-gray border dark:bg-gray-100 border-gray-700 p-4 sm:w-4/5 w-full m-2 mx-auto">
+      <div className="container rounded-2xl bg-dark-gray border dark:bg-gray-100 border-gray-700 p-4 sm:w-4/5 w-full m-2 mx-auto">
         <h2 className="text-3xl font-semibold dark:text-gray-500 mb-6">Contact Me</h2>
 
         {/* Updated Contact Form */}
@@ -21,7 +21,7 @@ const ContactMe = () => {
             <label htmlFor="message" className="block text-sm font-medium text-gray-400">Your Message</label>
             <textarea id="message" name="message" rows="4" className="mt-1 p-2 w-full border rounded-md dark:bg-gray-200 bg-gray-800 text-gray-300" required></textarea>
           </div>
-          <button type="submit" className="dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-xl   focus:outline-none focus:shadow-outline-blue">Send Message</button>
+          <button type="submit" className="dark:text-gray-800 border border-gray-500 text-white px-6 py-2 rounded-2xl   focus:outline-none focus:shadow-outline-blue">Send Message</button>
         </form>
 
         {/* Sample Contact Information */}
