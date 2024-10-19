@@ -13,9 +13,9 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, y: 50, transition: { duration: 0.5 } }}
-      className='dark:bg-gray-100 dark:text-gray-900 bg-dark-gray justify-center  flex items-start'
+      className="dark:bg-gray-100 dark:text-gray-900 bg-dark-gray justify-center flex items-start"
     >
-      <div id="skills-master" className="dark:bg-gray-100  dark:text-gray-900 skills sm:w-4/5 w-full m-2 bg-dark-gray text-white sm:py-12">
+      <div id="skills-master" className="dark:bg-gray-100 dark:text-gray-900 skills sm:w-4/5 w-full m-2 bg-dark-gray text-white sm:py-12">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, duration: 0.5 } }}
@@ -39,7 +39,7 @@ const Skills = () => {
 const SkillItem = ({ icon, label }) => {
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.5 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },    
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };
 
   return (
@@ -49,8 +49,8 @@ const SkillItem = ({ icon, label }) => {
       whileHover={{ scale: 1.1 }}
       className="skills11 p-4 bg-opacity-5 dark:bg-gray-200 bg-gray-100 rounded-2xl text-center"
     >
-      <i className={icon + "  text-4xl mb-4 text-green-500"}></i>
-      <p className="">{label}</p>
+      <i className={icon + " text-4xl mb-4 text-green-500"}></i>
+      <p>{label}</p>
     </motion.div>
   );
 };
@@ -69,29 +69,23 @@ const SkillsGrid = () => {
     { icon: "fab fa-figma", label: "Figma" },
     { icon: "fab fa-react", label: "Material UI" },
     { icon: "fab fa-adobe", label: "Adobe XD" },
-    { icon: "fab fa-stack-overflow", label: "Data Structure" },
-    { icon: "fab fa-matlab", label: "Matlab" },
-    { icon: "fab fa-matlab", label: "Computer Networks" },
-    { icon: "fab fa-matlab", label: "Operating System" },
+    { icon: "fas fa-database", label: "Data Structure" },
+    { icon: "fas fa-network-wired", label: "Computer Networks" },
+    { icon: "fas fa-laptop-code", label: "Operating System" },
     { icon: "fab fa-node", label: "Node.js" },
     { icon: "fab fa-react", label: "Next.js" },
     { icon: "fab fa-react", label: "Redux" },
-    { icon: "fab fa-react", label: "Redux Toolkit" },
-    {icon: "fab fa-node-js", label: "Express.js"},
-    {icon: "fab fa-mongo", label: "MongoDB"},
-    {icon: "fab fa-node-js", label: "Node.js"},
-    //golang added 
-    {icon: "fab fa-golang", label: "Golang"},
-    //api
-    {icon: "fab fa-restfulapi", label: "Restful API"},
-
-   
+    { icon: "fab fa-toolbox", label: "Redux Toolkit" },
+    { icon: "fas fa-server", label: "Express.js" },
+    { icon: "fas fa-database", label: "MongoDB" },
+    { icon: "fab fa-golang", label: "Golang" },
+    { icon: "fas fa-code", label: "RESTful API" },
   ];
 
   return (
-    <div className="dark:bg-gray-100 dark:text-gray-900 bg-dark-gray  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="dark:bg-gray-100 dark:text-gray-900 bg-dark-gray grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {skillsData.map((skill, index) => (
-        <SkillItem  key={index} {...skill} />
+        <SkillItem key={index} {...skill} />
       ))}
     </div>
   );

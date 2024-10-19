@@ -67,10 +67,10 @@ const ContentWriter = () => {
 
 const ArticleCard = ({ title, link, description }) => {
     return (
-        <div className="dark:bg-gray-200  my-4 dark:text-gray-700  text-gray-400 p-6 rounded-2xl  bg-opacity-5 bg-gray-100 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <div className="dark:bg-gray-200  my-4 dark:text-gray-700  text-gray-400 p-6 rounded-2xl  bg-opacity-5 bg-gray-900 hover:border-blue-500 transition duration-300 transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">{title}</h3>
             <p className="text-gray-500 mb-4">{description}</p>
-            <a href={link} target="_blank" rel="noopener noreferrer" className=" dark:text-gray-800 bg-opacity-5 bg-gray-100 text-white px-6 py-2 rounded-2xl hover:underline">
+            <a href={link} target="_blank" rel="noopener noreferrer" className=" dark:text-gray-800 bg-opacity-5 bg-gray-00 text-white px-6 py-2 rounded-2xl hover:underline">
                 Read Article
             </a>
         </div>
