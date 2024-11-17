@@ -1,4 +1,3 @@
-// Projects.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -13,6 +12,13 @@ const Projects = () => {
       <div id="project-master" className="dark:bg-gray-100 dark:text-gray-900 sm:w-4/5 w-full m-2 text-gray-300 bg-dark-gray flex flex-col justify-center">
         
         <ProjectSection
+          title="JobBoard - Job Portal"
+          imageSrc="./jobboard.png" // Add the correct image path for your JobBoard app
+          description="A full-stack job portal where users can search for jobs, apply, and create their profiles. Built with MERN stack."
+          projectLink="Coming soon" // Replace with the actual link
+        />
+        
+        <ProjectSection
           title="BlogSphere - Modern Blog Application"
           imageSrc="./blogsphere.png" // Add the correct image path for your BlogSphere app
           description="A full-stack blog platform built with the MERN stack, Vite, and Tailwind CSS, featuring user authentication, CRUD operations, search functionality, and tag filtering."
@@ -21,9 +27,30 @@ const Projects = () => {
         
         <ProjectSection
           title="General Store - An Ecommerce Site"
-          imageSrc="./simple-notes.png"
+          imageSrc="./general-store.png"
           description="An Ecommerce web app built with React, Tailwind CSS, and Material-UI."
           projectLink="https://general-store.onrender.com/"
+        />
+        
+        <ProjectSection
+          title="Quick Commerce App (In Construction)"
+          imageSrc="./quick-commerce.png"
+          description="A full-stack e-commerce platform under construction. Built with React, Node.js, and MongoDB."
+          projectLink="Coming soon" // Replace with the actual link
+        />
+        
+        <ProjectSection
+          title="Minimaltab - Chrome Extension"
+          imageSrc="./minimaltab.png" // Add the correct image path for your Minimaltab app
+          description="A Chrome extension to help manage browser tabs and improve productivity."
+          projectLink="https://minimaltab.vercel.app/"
+        />
+        
+        <ProjectSection
+          title="MemoryExt (In Construction)"
+          imageSrc="./memoryext.png" // Add the correct image path for your MemoryExt app
+          description="A Chrome extension under development to track memory usage and optimize browser performance."
+          projectLink="Coming Soon" // Replace with the actual link
         />
         
         <ProjectSection
@@ -33,12 +60,7 @@ const Projects = () => {
           projectLink="https://notesimple.vercel.app/"
         />
         
-        <ProjectSection
-          title="Personal Portfolio Website"
-          imageSrc="./portfolio2.png"
-          description="A personal portfolio website showcasing work, skills, and achievements, built using HTML, Tailwind CSS, and JavaScript."
-          projectLink="https://amrahs02.github.io/portfolio_modified/"
-        />
+       
         
         <ProjectSection
           title="To-Do List in React"
