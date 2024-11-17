@@ -3,8 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inter', sans-serif;
     font-size: medium;
 }
