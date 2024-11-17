@@ -13,9 +13,9 @@ const Homepage = () => {
       variants={sectionVariants}
       initial="hidden"
       animate="visible"
-      className="bg-dark-gray  bg-opacity-100 dark:bg-gray-100 mx-1 sm:m-0  dark:text-gray-600 text-gray-300 flex flex-col items-center justify-center"
+      className="bg-dark-black  bg-opacity-100 dark:bg-gray-100 mx-1  sm:m-0  dark:text-gray-600 text-gray-300 flex flex-col items-center justify-center"
     >
-      <div className="text-center bg-gray-200 p-8  rounded-2xl sm:w-4/5 w-full px-4">
+      <div className="text-center dark:bg-gray-200  p-8  rounded-2xl sm:w-4/5 w-full px-4">
         <motion.img
           src={profileImage}
           alt="Sandeep Sharma Avatar"
