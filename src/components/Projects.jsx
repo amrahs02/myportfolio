@@ -27,16 +27,16 @@ const Projects = () => {
         />
 
         <ProjectSection
-          title="BlogSphere - Modern Blog Application"
+          title="BlogSphere"
           imageSrc={blogsphereimage} // Add the correct image path for your BlogSphere app
-          description="A full-stack blog platform built with the MERN stack, Vite, and Tailwind CSS, featuring user authentication, CRUD operations, search functionality, and tag filtering."
+          description="A full-stack blog platform built with the MERN stack, Vite, and Tailwind CSS, featuring user authentication, CRUD operations, search functionality."
           projectLink="https://blogsphere.onrender.com"
         />
 
         <ProjectSection
-          title="General Store - An Ecommerce Site"
+          title="General Store"
           imageSrc={generalstoreimage} // Add the correct image path for your General Store app
-          description="An Ecommerce web app built with React, Tailwind CSS, and Material-UI."
+          description="An Ecommerce web app built with Mern Stack, Tailwind CSS, and Material-U, featuring user authentication,"
           projectLink="https://general-store.onrender.com/"
         />
 
@@ -89,7 +89,7 @@ const ProjectSection = ({ title, imageSrc, description, projectLink }) => {
 
   return (
     <div className="dark:bg-gray-100  dark:text-gray-900 text-gray-300 bg-dark-gray">
-      <div className="p-4 pt-8 rounded-2xl    m-4 bg-opacity-30 bg-gray-400">
+      <div className="p-4 pt-8 rounded-2xl  w  m-4 bg-opacity-30 bg-gray-400">
         <h3 className="text-2xl  font-bold  mb-2">{title}</h3>
         <img className=" rounded-2xl w-fit   mb-4" src={imageSrc} alt="" />
         <p className="text-gray-500  mb-4">{description}</p>

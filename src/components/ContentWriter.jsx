@@ -1,5 +1,6 @@
 import React from "react";
 import Breadcrumb from "./BreadCrumb";
+import { Link } from "react-router-dom";
 
 const ContentWriter = () => {
   return (
@@ -9,13 +10,13 @@ const ContentWriter = () => {
           Welcome to my corner of knowledge-sharing! As a part-time content
           writer, I've had the pleasure of delving into various topics and
           contributing articles to platforms like{" "}
-          <span className="text-green-500 font-bold">GeeksforGeeks</span>. and 
-          <span className="text-black font-bold"> Medium</span> Below, you'll
+          <Link to="https://www.geeksforgeeks.org/user/isandeep2183/contributions/" className="text-green-500 font-bold">GeeksforGeeks</Link>. and 
+          <Link  to="https://www.medium.com/@amrahs02" className="text-black font-bold"> Medium</Link> Below, you'll
           find a curated selection of my featured articles, covering a range of
           web development and technology subjects. Explore, learn, and enjoy the
           insights!
         </p>
-        <div className=" sm:w-4/5  w-full  grid grid-cols-3 m-2 mx-4  container">
+        <div className=" sm:w-4/5  w-full  sm:grid sm:grid-cols-3 m-2 mx-4  container">
           <ArticleCard
             title="Benefits of Using Hooks in React Redux"
             link="https://www.geeksforgeeks.org/what-are-the-benefits-of-using-hooks-in-react-redux/"
