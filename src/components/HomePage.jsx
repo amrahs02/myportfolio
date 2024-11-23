@@ -37,7 +37,7 @@ const Homepage = () => {
               <strong>Frameworks:</strong> React, Node.js, Express.js
             </p>
             <p>
-              <strong>Libraries:</strong> Redux Toolkit, GraphQL
+              <strong>Libraries:</strong> Redux Toolkit
             </p>
           </div>
           <div>
@@ -48,7 +48,7 @@ const Homepage = () => {
               <strong>Database:</strong> MongoDB, SQL
             </p>
             <p>
-              <strong>APIs:</strong> REST API
+              <strong>APIs:</strong> REST API, GraphQL
             </p>
           </div>
         </div>
