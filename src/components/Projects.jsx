@@ -23,14 +23,14 @@ const Projects = () => {
           title="JobBoard - Job Portal"
           imageSrc={jobboardimage} // Add the correct image path for your JobBoard app
           description="A full-stack job portal where users can search for jobs, apply, and create their profiles. Built with MERN stack."
-          projectLink="Coming soon" // Replace with the actual link
+          projectLink="https://jobboardwebapp.onrender.com/" // Replace with the actual link
         />
 
         <ProjectSection
           title="BlogSphere"
           imageSrc={blogsphereimage} // Add the correct image path for your BlogSphere app
           description="A full-stack blog platform built with the MERN stack, Vite, and Tailwind CSS, featuring user authentication, CRUD operations, search functionality."
-          projectLink="https://blogsphere.onrender.com"
+          projectLink="https://blogsphereapp.onrender.com/"
         />
 
         <ProjectSection
