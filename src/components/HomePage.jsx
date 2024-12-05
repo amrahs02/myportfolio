@@ -54,7 +54,7 @@ const Homepage = () => {
         </div>
         <motion.div className="mt-8">
           <a
-            href="https://drive.google.com/file/d/1YFKVvF4zU2w_3wBYHOW5bNS8CvJoXp97/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1NMhJ7-TWD_YevI2vLjNT6KhBDelF-qi1/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 font-bold underline hover:text-blue-700"
