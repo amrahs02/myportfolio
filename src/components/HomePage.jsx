@@ -59,7 +59,7 @@ const Homepage = () => {
             rel="noopener noreferrer"
             className="text-blue-500 font-bold underline hover:text-blue-700"
           >
-            Here's my CV 〉
+            Here's my Resume 〉
           </a>
         </motion.div>
         {/* Social Media Links */}
